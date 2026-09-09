@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official-data radar for sports and wearable product teams">
+  <title>Sports & Wearable Data Radar</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav><span class="brand">FIELD SIGNALS / 01</span><a href="#sources">Sources</a></nav>
+    <div class="hero-copy">
+      <p class="eyebrow">External intelligence for product teams</p>
+      <h1>Sports &<br><em>Wearable</em> Radar</h1>
+      <p class="dek">A traceable snapshot of participation, population, connectivity, sport culture and platform ecosystems.</p>
+      <div class="actions">
+        <a class="button primary" id="refresh-link" href="https://github.com/leanxiaochun-glitch/sports-wearable-data-radar/actions/workflows/refresh-data.yml" target="_blank" rel="noopener">↻ Refresh latest data</a>
+        <span id="updated">Loading dataset…</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="summary" aria-label="Summary">
+      <div><strong id="metric-count">—</strong><span>tracked signals</span></div>
+      <div><strong id="source-count">—</strong><span>official sources</span></div>
+      <div><strong id="auto-count">—</strong><span>automated feeds</span></div>
+    </section>
+    <section class="controls">
+      <label>Filter signals <input id="search" type="search" placeholder="Try WHO, running, HealthKit…"></label>
+      <div id="filters" class="filters" aria-label="Category filters"></div>
+    </section>
+    <section id="signals" class="signals" aria-live="polite"></section>
+    <section id="sources" class="methodology">
+      <p class="eyebrow">Methodology</p>
+      <h2>Every number keeps its receipt.</h2>
+      <p>Automated values are retrieved from public endpoints. Editorial signals from annual reports and developer announcements are reviewed in <code>data/manual.json</code>. Every card links to its primary source and exposes publication, retrieval and collection method.</p>
+    </section>
+  </main>
+  <footer><span>Open data · Transparent provenance</span><a href="https://github.com/leanxiaochun-glitch/sports-wearable-data-radar" id="repo-link">View repository ↗</a></footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
