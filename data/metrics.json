@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T09:47:09.692837Z",
+  "generated_at": "2026-10-05T10:26:51.302197Z",
   "metrics": [
     {
       "id": "who-inactivity",
@@ -103,7 +103,7 @@
       "source_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
       "article_title": "Population, total",
       "published_date": null,
-      "retrieved_at": "2026-09-28",
+      "retrieved_at": "2026-10-05",
       "method": "API · World Bank indicator SP.POP.TOTL"
     }
   ]
